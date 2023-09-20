@@ -2,14 +2,15 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: kube-prometheus-stack
+  name: Nginx-ingress
+  namespace: Nginx-ingress
 spec:
   interval: 5m
   chart:
     spec:
-      version: "45.x"
-      chart: kube-prometheus-stack
+      version: "4.7.2"
+      chart: ingress-nginx
       sourceRef:
         kind: HelmRepository
-        name: prometheus-community
-      interval: 60m
+        name: Nginx-Ingress
+      interval: 10m

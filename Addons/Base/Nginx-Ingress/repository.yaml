@@ -2,8 +2,8 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: HelmRepository
 metadata:
-  name: podinfo
-  namespace: default
+  name: Nginx-Ingress
+  namespace: Nginx-Ingress
 spec:
   interval: 5m0s
-  url: https://stefanprodan.github.io/podinfo
+  url: https://kubernetes.github.io/ingress-nginx

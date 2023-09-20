@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: portainer
+  name: Portainer
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: nginx-ingress
+  name: Nginx-Ingress
