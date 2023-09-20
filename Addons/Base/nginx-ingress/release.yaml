@@ -2,8 +2,8 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: Nginx-ingress
-  namespace: Nginx-ingress
+  name: nginx-ingress
+  namespace: nginx-ingress
 spec:
   interval: 5m
   chart:
@@ -12,5 +12,5 @@ spec:
       chart: ingress-nginx
       sourceRef:
         kind: HelmRepository
-        name: Nginx-Ingress
+        name: nginx-ingress
       interval: 10m

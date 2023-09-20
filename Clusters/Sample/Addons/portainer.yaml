@@ -6,7 +6,7 @@ metadata:
   namespace: portainer
 spec:
   interval: 5m0s
-  path: ./Addons/Environments/Sample/Portainer
+  path: ./Addons/Environments/Sample/portainer
   prune: true
   sourceRef:
     kind: GitRepository
