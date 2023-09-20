@@ -13,4 +13,4 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: nginx-ingress
-      interval: 10m
+      interval: 5m
